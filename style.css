@@ -67,8 +67,15 @@ header {
 }
 
 .greet {
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.greet h1 {
+    font-size: 55px;
+    line-height: 0.9;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .small {
@@ -285,11 +292,12 @@ section {
     }
 
 .designertxt {
-    font-size: 60px !important;
-    line-height: 0.9;
+    display: block;
+    font-size: 45px !important;
+    line-height: 1;
     position: static;
     left: auto;
-    white-space: nowrap;
+    white-space: normal;
 }
 
     .des {
@@ -303,10 +311,19 @@ section {
         margin-top: 30px;
     }
 
-    .himage img {
-        width: 280px;
-        max-width: 85%;
-    }
+    .himage {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.himage img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+}
     .about,
     .skills,
     .projects,
@@ -404,5 +421,43 @@ section {
 
     .navlink li a {
         font-size: 12px;
+    }
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navlink {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background: #f3f3f1;
+        border: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    .navlink.active {
+        display: flex;
     }
 }
