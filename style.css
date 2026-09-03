@@ -84,13 +84,17 @@ header {
     src: url(fontss/WILD\ WORLD.otf );
 }
 h1{
-    font-family:WILD;
+    font-family:dripf;
 }
 h2{
     font-family:WILD;
 }
 .button{
     font-family:WILD;
+    margin-top: 15px;  
+margin-top: 30px; 
+margin-top: 50px; 
+color: #000;
 }
 section {
     padding: 100px 5%;
@@ -105,6 +109,8 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    background-image: url("profile/texture.png");
+    background-size: cover;
 }
 
 .project img {
@@ -122,5 +128,130 @@ section {
 .designertxt {
     color: #2F39A9;
     position: relative;
-    left: 250px;
+    left: 30px;
+    font-family:dripf;
+    font-size: 100px;
 }
+@font-face {
+    font-family:dripf;
+    src: url(fontss/NoctraDrip-OutlineMelt.ttf);
+}
+@font-face {
+    font-family:dripf;
+    src: url(fontss/NoctraDrip-Solid.ttf);
+}
+.des{
+    font-size: larger;
+    font-weight: 400;
+    text-align: left;
+}
+.skills {
+    padding: 120px 5%;
+        background-image: url("profile/texture.png");
+    background-size: cover;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.skillbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.skill {
+    padding: 35px;
+    border-top: 1px solid #111;
+}
+
+.skill h3 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.skill p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.about {
+    padding: 160px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+.about p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-bottom: 35px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+.projects {
+    padding: 140px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projects h2 {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 70px;
+    border-top: 1px solid #111;
+    padding-top: 40px;
+}
+
+.project-info {
+    order: 1;
+}
+
+.project img {
+    order: 2;
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+}
+
+.project-number {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-info p {
+    max-width: 450px;
+    line-height: 1.7;
+}
+   .hero{ background-image: url("profile/texture.png");
+    background-size: cover;
+   }
