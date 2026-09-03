@@ -122,8 +122,9 @@ section {
 .proect-container {
     gap: 50px;
 }
-.himage{
-    width:400px;
+.himage img{
+    width: 600px;
+
 }
 .designertxt {
     color: #2F39A9;
