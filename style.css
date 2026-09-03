@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f1;
+    color: #111;
+    line-height: 1.6;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(243, 243, 241, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #d6d6d3;
+}
+.navbar {
+    width: min(1200px, 90%);
+    margin: auto;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo { 
+    font-family:WILD   ;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+.navlink {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+.navlink a {
+    color: #111;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.navlink a:hover {
+    opacity: 0.5;
+}
+.hero {
+    min-height: 100vh;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.greet {
+    position: relative;
+    z-index: 2;
+}
+
+.small {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family:WILD;
+    src: url(fontss/WILD\ WORLD.otf );
+}
+h1{
+    font-family:WILD;
+}
+h2{
+    font-family:WILD;
+}
+.button{
+    font-family:WILD;
+}
+section {
+    padding: 100px 5%;
+}
+.project img {
+    width: 20%;
+    height: auto;
+    display: block;
+}
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.project img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    order: 2;
+}
+.proect-container {
+    gap: 50px;
+}
+.himage{
+    width:400px;
+}
+.designertxt {
+    color: #2F39A9;
+    position: relative;
+    left: 250px;
+}
